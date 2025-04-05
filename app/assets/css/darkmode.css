@@ -1,0 +1,59 @@
+/* Modo oscuro: estilos generales */
+.dark-mode {
+  background-color: #343a40 !important;
+  color: #f8f9fa !important;
+}
+.dark-mode a {
+  color: #adb5bd !important;
+}
+/* Adaptación de Navbar en modo oscuro */
+.dark-mode .main-header.navbar {
+  background-color: #23272b !important;
+  border-bottom: 1px solid #495057;
+}
+.dark-mode .main-header.navbar .nav-link {
+  color: #f8f9fa !important;
+}
+/* Adaptación del Sidebar (dashboard) */
+.dark-mode .main-sidebar {
+  background-color: #23272b !important;
+}
+.dark-mode .main-sidebar .brand-link {
+  background-color: #1c1e21 !important;
+}
+.dark-mode .main-sidebar .nav-sidebar .nav-link {
+  color: #f8f9fa !important;
+}
+.dark-mode .main-sidebar .nav-sidebar .nav-link.active {
+  background-color: #495057 !important;
+}
+/* Adaptación de Content Wrapper (dashboard) */
+.dark-mode .content-wrapper {
+  background-color: #343a40 !important;
+  color: #f8f9fa !important;
+}
+/* Adaptación de las tarjetas (cards) */
+.dark-mode .card {
+  background-color: #3a3f44 !important;
+  border: none;
+  color: #f8f9fa;
+}
+/* Adaptación de tablas */
+.dark-mode table {
+  background-color: #495057 !important;
+  color: #f8f9fa !important;
+}
+.dark-mode table th,
+.dark-mode table td {
+  border: 1px solid #6c757d !important;
+}
+/* Botón para alternar modo oscuro */
+.dark-mode-toggle {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #6c757d;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
