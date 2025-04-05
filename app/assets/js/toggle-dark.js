@@ -11,9 +11,9 @@ $(document).ready(function () {
       .each(function () {
         if ($("body").hasClass("dark-mode")) {
           // Forzar fondo negro a los botones con btn-dark
-          $(this).removeClass("btn-light").addClass("btn-dark");
+          $(this).addClass("btn-dark");
         } else {
-          $(this).removeClass("btn-dark").addClass("btn-light");
+          $(this).removeClass("btn-dark");
         }
       });
   }

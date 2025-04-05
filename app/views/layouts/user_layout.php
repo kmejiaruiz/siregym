@@ -12,7 +12,7 @@ $loggedIn = isset($_SESSION['user']); // Verifica si hay un usuario logueado
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
     <!-- Bootstrap 5 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./app/assets/css/darkmode.css">
+    <!-- <link rel="stylesheet" href="./app/assets/css/darkmode.css"> -->
     <style>
         body.no-sidebar {
             height: 100vh !important;
@@ -49,8 +49,7 @@ $loggedIn = isset($_SESSION['user']); // Verifica si hay un usuario logueado
                         <a href="index.php?controller=reservation&action=list" class="nav-link">Mis Reservas</a>
                     </li>
                     <li class="nav-item">
-                        <!-- Botón para alternar modo oscuro -->
-                        <button class="dark-mode-toggle" id="toggleDarkMode">Modo Oscuro</button>
+                        <button onclick="alert('Opcion no disponible actualmente')" class="nav-link">Dark Mode</button>
                     </li>
                     <?php if ($_SESSION['user']['role'] === 'admin'): ?>
                         <li class="nav-item">

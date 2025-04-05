@@ -17,7 +17,7 @@ ob_start();
         <?php endif; ?>
 
         <!-- Secci\u00f3n de Gesti\u00f3n de Horarios -->
-        <h4>Gesti\u00f3n de Horarios Disponibles</h4>
+        <h4>Gestion de Horarios Disponibles</h4>
         <form method="POST" action="index.php?controller=admin&action=manageSlots">
             <div class="form-group">
                 <label for="new_slot">Agregar Nuevo Horario (Formato HH:MM)</label>
@@ -56,13 +56,21 @@ ob_start();
                                 <a href="index.php?controller=admin&action=manageSlots&edit_slot=<?php echo $slot['id']; ?>"
                                     class="btn btn-warning btn-sm">Editar</a>
                             <?php endif; ?>
-                            <a href="index.php?controller=admin&action=toggleSlot&slot_id=<?php echo $slot['id']; ?>"
+
+
+                            <!-- <a href="index.php?controller=admin&action=toggleSlot&slot_id=<?php echo $slot['id']; ?>"
                                 class="btn btn-info btn-sm">
                                 <?php echo $slot['is_available'] ? 'Deshabilitar' : 'Habilitar'; ?>
+                            </a> -->
+                            <a href="#!" class="btn btn-info btn-sm" onclick="alert('Opcion en desarrollo')">
+                                Deshabilitar
                             </a>
-                            <a href="index.php?controller=admin&action=manageSlots&delete_slot=<?php echo $slot['id']; ?>"
-                                class="btn btn-danger btn-sm"
-                                onclick="return confirm('¿Eliminar este horario?');">Eliminar</a>
+
+
+                            <!-- <a href="index.php?controller=admin&action=manageSlots&delete_slot=<?php echo $slot['id']; ?>"
+                                class="btn btn-danger btn-sm" onclick="return alert('Opcion en desarrollo');">Eliminar</a> -->
+                            <a href="#!" class="btn btn-danger btn-sm"
+                                onclick="return alert('Opcion en desarrollo');">Eliminar</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
@@ -80,7 +88,7 @@ ob_start();
                     value="<?php echo isset($_GET['limit_date']) ? htmlspecialchars($_GET['limit_date']) : ''; ?>">
             </div>
             <div class="form-group mt-2">
-                <label for="max_reservations">N\u00famero M\u00e1ximo de Reservaciones:</label>
+                <label for="max_reservations">Numero Maximo de Reservaciones:</label>
                 <input type="number" name="max_reservations" id="max_reservations" class="form-control" required min="1"
                     value="<?php echo (isset($current_limit) && $current_limit) ? $current_limit['max_reservations'] : 10; ?>">
             </div>
@@ -95,7 +103,7 @@ ob_start();
                 <tr>
                     <th>ID</th>
                     <th>Fecha</th>
-                    <th>L\u00edmite</th>
+                    <th>Limite</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -109,9 +117,10 @@ ob_start();
                             <td>
                                 <a href="index.php?controller=admin&action=editLimit&limit_id=<?php echo $limit['id']; ?>"
                                     class="btn btn-warning btn-sm">Editar</a>
-                                <a href="index.php?controller=admin&action=deleteLimit&limit_id=<?php echo $limit['id']; ?>"
-                                    class="btn btn-danger btn-sm"
-                                    onclick="return confirm('¿Eliminar este l\u00edmite?');">Eliminar</a>
+                                <!-- <a href="index.php?controller=admin&action=deleteLimit&limit_id=<?php echo $limit['id']; ?>"
+                                    class="btn btn-danger btn-sm" onclick="return alert('Opcion en desarrollo');">Eliminar</a> -->
+                                <a href="#!" class="btn btn-danger btn-sm"
+                                    onclick="return alert('Opcion en desarrollo');">Eliminar</a>
                             </td>
                         </tr>
                     <?php endforeach; ?>

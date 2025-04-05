@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatkit@latest/css/flatkit.min.css">
     <!-- Bootstrap 5 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./app/assets/css/darkmode.css">
+    <!-- <link rel="stylesheet" href="./app/assets/css/darkmode.css"> -->
 
 </head>
 
@@ -21,14 +21,19 @@
             </a>
         </div>
         <ul class="nav">
+
             <li class="nav-item">
-                <button class="dark-mode-toggle" id="toggleDarkMode">Modo Oscuro</button>
+                <button onclick="alert('Opcion no disponible actualmente')" class="nav-link">Dark Mode</button>
             </li>
-            <li class="nav-item"><a href="index.php?controller=admin&action=dashboard" class="nav-link">Dashboard</a>
+            <li class="nav-item">
+                <a href="index.php?controller=admin&action=dashboard" class="nav-link">Dashboard</a>
             </li>
-            <li class="nav-item"><a href="index.php?controller=admin&action=manageSlots" class="nav-link">Gestionar
-                    Horarios</a></li>
-            <li class="nav-item"><a href="index.php?controller=home&action=index" class="nav-link">Salir al Sitio</a>
+            <li class="nav-item">
+                <a href="index.php?controller=admin&action=manageSlots" class="nav-link">Gestionar
+                    Horarios</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.php?controller=home&action=index" class="nav-link">Salir al Sitio</a>
             </li>
         </ul>
     </header>
